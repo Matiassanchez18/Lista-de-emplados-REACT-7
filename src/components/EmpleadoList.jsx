@@ -16,6 +16,7 @@ const EmpleadoList = () => {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm();
 
   const [arrayEmpleados, setarrayEmpleados] = useState([]);
@@ -41,7 +42,7 @@ const EmpleadoList = () => {
           foto: data.foto.trim(),
         },
       ]);
-
+      reset()
       setContadorId(contadorID + 1);
       console.log(arrayEmpleados);
     }
@@ -152,7 +153,7 @@ const EmpleadoList = () => {
         </Modal>
       </article>
 
-      <EmpleadoRow></EmpleadoRow>
+      <EmpleadoRow arrayEmpleados = {arrayEmpleados}></EmpleadoRow>
     </section>
   );
 };
