@@ -1,10 +1,10 @@
 import React from 'react';
 import "../css/EmpleadoAvatar.css"
 
-const EmpleadoAvatar = () => {
+const EmpleadoAvatar = ({empleado}) => {
     return (
         <div>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL8fcxTF2zXP-h1regn9RiHJBJXHRWKkPAyA&s" className="Imagen" alt="" />
+            <img src={empleado.foto} className="Imagen" alt={empleado.fullname} />
         </div>
     );
 };
