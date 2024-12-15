@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from 'react-bootstrap/Modal';
+import EmpleadoRow from "./EmpleadoRow";
 
 
 const EmpleadoList = () => {
@@ -11,7 +12,7 @@ const EmpleadoList = () => {
 
   return (
     <section>
-      <section className="container mb-4">
+      <article className="container mb-4">
        <h1 className="text-center mt-4">Lista empleados</h1>  
        <Button variant="primary " className=" mx-auto p-1 d-flex mt-3" onClick={handleShow}>Agregar empleado</Button>
       
@@ -31,9 +32,10 @@ const EmpleadoList = () => {
           </Button>
         </Modal.Footer>
       </Modal>
-      </section>
+      </article>
+
+      <EmpleadoRow></EmpleadoRow>
     </section>
-    
   );
 };
 
