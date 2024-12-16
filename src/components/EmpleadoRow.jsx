@@ -19,7 +19,7 @@ const EmpleadoRow = ({ arrayEmpleados }) => {
                   {empleado.titulo}
                 </p>
 
-                <p className="mb-0 bg-info text-white w-50 w-md-auto">
+                <p className="mb-0 bg-info text-white w-auto w-md-auto">
                   {empleado.departamento}
                 </p>
               </div>
